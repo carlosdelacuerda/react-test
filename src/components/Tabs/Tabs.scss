@@ -3,9 +3,6 @@
 .tabs {
     display: flex;
     padding: 10px 0;
-    Tab {
-        cursor: pointer;
-    }
     span {
         border-left: 1px solid $color-3;
         margin: 0 11px;

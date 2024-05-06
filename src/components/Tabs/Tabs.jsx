@@ -22,7 +22,6 @@ const Tabs = () => {
 		<div className="tabs-container">
 			<div className="tabs">
 				{tabData.map((tab, index) => (
-					<>
 						<Tab
 							key={index}
 							label={tab.label}S
@@ -31,8 +30,6 @@ const Tabs = () => {
 							}
 							isActive={index === activeTab-1}
 						/>
-						<span></span>
-					</>
 				))}
 			</div>
 			{ activeTab === 1 &&
