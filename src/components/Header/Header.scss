@@ -1,0 +1,83 @@
+@import '../../../public/assets/styles/guide-style.scss';
+
+.header {
+    display: flex;
+    .today-header {
+        display: flex;
+        align-items: center;
+        img {
+            height: 64px;
+        }
+        .temperature {
+            padding-left: 10px;
+            display: flex;
+            h2 {
+                font-family: $main-font;
+                color: $color-1;
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 56px;
+                margin: 0;
+            }
+            .measure {
+                display: inline-block;
+                font-size: 16px;
+                line-height: 24px;
+                margin-top: 6px;
+                padding-left: 6px;
+                vertical-align: top;
+                color: $color-1;
+                margin-top: 6px;
+                padding-left: 6px;
+                height: auto;
+                display: flex;
+                align-items: center;
+                height: 24px;
+                font-size: 16px;
+                color: $color-2;
+                font-weight: normal;
+                sup:first-child {
+                    color: $color-1;
+                    font-weight: 500;
+                }
+                span {
+                    border-left: solid 1px $color-2;
+                    margin: 0 4px;
+                    height: 18px;
+                }
+            }
+        }
+        .sub-data {
+            padding-left: 9px;
+            padding-top: 6px;
+            small {
+                display: block;
+                color: $color-2;
+                font-size: 12px;
+                line-height: 16px;
+            }
+        }
+    }
+    .resume-header {
+        margin-right: 0;
+        margin-left: auto;
+        text-align: right;
+        * {
+            margin: 0 0 0 auto;
+        }
+        h1 {
+            font-size: 22px;
+            line-height: 26px;
+            font-family: $main-font;
+            color: $color-1;
+            font-weight: 400;
+        }
+        h2, h3 {
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-2;
+            font-weight: normal;
+            text-transform: capitalize;
+        }
+    }
+}

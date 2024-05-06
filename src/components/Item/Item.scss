@@ -1,0 +1,56 @@
+@import '/public/assets/styles/guide-style.scss';
+
+.item {
+    display: inline-block;
+    height: 95px;
+    line-height: 1;
+    margin-right: 7px;
+    text-align: center;
+    width: 74px;
+    cursor: pointer;
+    animation: $animation-2;
+    &>* {
+        width: 100%;
+        display: block;
+    }
+    .time {
+        color: $color-2;
+        font-size: 12px;
+        margin: 10px 0 5px 0;
+    }
+    .item-container {
+        padding: 10px 0;
+        background-color: white;
+        transition: $transition;
+        .week-day {
+            color: $color-1;
+            line-height: 15px;
+            padding-top: 7px;
+            font-size: medium;
+            font-weight: normal;
+        }
+        .image-item img {
+            height: 48px;
+        }
+        .temperature {
+            font-size: 13px;
+            font-weight: normal;
+            line-height: 15px;
+            color: $color-2;
+            span {
+                margin-left: 2px;
+            }
+            span:first-child {
+                color: $color-1;
+                margin-left: 0px;
+                margin-right: 2px;
+            }
+        }
+    }
+
+}
+.item.selected .item-container, .item .item-container:hover{
+    background-color: $color-4;
+    border-radius: 10px;
+    transition: $transition;
+}

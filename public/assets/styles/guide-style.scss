@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Google;
+    src: url('../fonts/ProductSans-Regular.ttf'), url('../fonts/ProductSans-Black.ttf')
+}
+
+$main-font: Google, "arial", sans-serif;
+
+$color-1: #202124;
+$color-2: #70757a;
+$color-3: #dadce0;
+$color-4: #f8f9fa;
+$color-5: #fbbc04;
+
+$border-1: 3px solid;
+
+$transition: ease-in-out 0.3s;
+
+@keyframes fade1 {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+@keyframes fade2 {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+$animation-1: 3s ease-out 0s infinite fade1;
+$animation-2: 1s ease-out 0s fade2;

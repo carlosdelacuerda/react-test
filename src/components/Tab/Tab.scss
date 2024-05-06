@@ -1,0 +1,18 @@
+@import '/public/assets/styles/guide-style.scss';
+
+.tab {
+    cursor: pointer;
+    padding-bottom: 4px;
+    border-bottom: $border-1;
+    border-color: white;
+    transition: $transition;
+    &:hover {
+        border-bottom: $border-1;
+        transition: $transition;
+        border-color: $color-5
+    }
+}
+.active {
+    border-bottom: $border-1;
+    border-color: $color-5
+}

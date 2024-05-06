@@ -1,0 +1,17 @@
+@import '/public/assets/styles/guide-style.scss';
+
+.no-data {
+    color: $color-2;
+    align-items: center;
+    .no-data-img {
+        margin: auto;
+        display: flex;
+        filter: grayscale(100%);
+        animation: $animation-1;
+    }
+    h3 {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+}
